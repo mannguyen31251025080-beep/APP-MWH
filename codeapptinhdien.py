@@ -26,7 +26,7 @@ def set_png_as_page_bg(bin_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # --- 2. CẤU HÌNH TRANG ---
-st.set_page_config(page_title="Dự toán điện HNM", layout="wide")
+st.set_page_config(page_title="Dự toán điện MWH", layout="wide")
 
 # Thử set nền, nếu chưa có file ảnh thì sẽ không báo lỗi
 try:
@@ -103,7 +103,7 @@ def get_weather():
 temp, is_rainy = get_weather()
 
 # --- 5. GIAO DIỆN CHÍNH ---
-st.markdown('<h1 class="main-title">✨ DỰ TOÁN ĐIỆN PHÒNG TRỌ ✨</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-title">✨ DỰ TOÁN ĐIỆN PHÒNG TRỌ MWH ✨</h1>', unsafe_allow_html=True)
 
 col_input, col_weather = st.columns([3, 2], gap="large")
 
